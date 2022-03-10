@@ -10,4 +10,10 @@ window.addEventListener('load',(e)=>{
     fragmento.appendChild(parrafo);
     mensaje.appendChild(fragmento);
 
+    saludo();
 });
+
+
+function saludo(){
+    alert("hola mundo");
+}
