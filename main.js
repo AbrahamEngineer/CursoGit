@@ -18,5 +18,4 @@ function presionar(){
     link.addEventListener('click',(e)=>{
         window.location.href = "https://www.youtube.com/watch?v=ZtFPexrxt4g";
     });
-    
 }
