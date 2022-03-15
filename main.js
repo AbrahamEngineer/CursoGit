@@ -9,11 +9,14 @@ window.addEventListener('load',(e)=>{
     parrafo.appendChild(textNode);
     fragmento.appendChild(parrafo);
     mensaje.appendChild(fragmento);
-
-    saludo();
+    presionar();
 });
 
 
-function saludo(){
-    alert("hola mundo");
+function presionar(){
+    const link = document.getElementById('link');
+    link.addEventListener('click',(e)=>{
+        window.location.href = "https://www.youtube.com/watch?v=ZtFPexrxt4g";
+    });
+    
 }
