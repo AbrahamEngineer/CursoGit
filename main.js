@@ -1,21 +1,8 @@
-window.addEventListener('load',(e)=>{
-    const mensaje = document.querySelector('.mensaje');
-
-    const fragmento = document.createDocumentFragment();
-    
-    const parrafo = document.createElement("P");
-    const textNode = document.createTextNode("Mensaje de Bienveneido");
-
-    parrafo.appendChild(textNode);
-    fragmento.appendChild(parrafo);
-    mensaje.appendChild(fragmento);
-    presionar();
+window.addEventListener('scroll',(e)=>{
+    const header = document.getElementById('header');
+    if(window.scrollY !== 0){
+        header.classList.add("scroll");
+    }else{
+        header.classList.remove("scroll");
+    }
 });
-
-
-function presionar(){
-    const link = document.getElementById('link');
-    link.addEventListener('click',(e)=>{
-        window.location.href = "https://www.youtube.com/watch?v=ZtFPexrxt4g";
-    });
-}
