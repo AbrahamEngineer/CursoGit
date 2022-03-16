@@ -16,7 +16,7 @@ class Alumno{
     }
 
     public function getNombre(){
-        return $this->nombre;
+        return "Mi nombre es " . $this->nombre;
     }
 
     public function setNombre($nombre){
@@ -29,6 +29,14 @@ class Alumno{
 
     public function setEdad($edad){
         return $this->edad = $edad;
+    }
+
+    public function getDni(){
+        return $this->dni;
+    }
+
+    public function setDni($dni){
+        return $this->dni = $dni;
     }
 
 }
