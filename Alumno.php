@@ -5,6 +5,7 @@ class Alumno{
     private $codigo;
     private $nombre;
     private $edad;
+    private $dni;
 
     public function getCodigo(){
         return $this->codigo;
